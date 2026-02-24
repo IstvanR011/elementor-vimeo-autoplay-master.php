@@ -1,12 +1,10 @@
-### 🎬 Elementor Vimeo Autoplay Master
-**The definitive solution for Vimeo "Double-Click" issues in Elementor.**
+### 🎬 Elementor & Vimeo UX Master Fix
+**Advanced, performance-conscious solution for the "Double-Click" Vimeo bug.**
 
-This script addresses a notorious UX bug where Vimeo videos behind Elementor overlays or inside lightboxes require two clicks to play on certain browsers and mobile devices.
+Most developers avoid MutationObservers due to performance concerns. This script, however, uses a **highly optimized and "metered" approach**:
 
-#### Key Features:
-* **Intelligent Autoplay Injection:** Automatically detects Vimeo iframes and injects `autoplay=1` only when the user interacts with the element.
-* **DOM Mutation Observer:** Unlike simple click-listeners, this tool watches the DOM for the Elementor Lightbox appearance, ensuring the fix works even for dynamically generated content.
-* **Mobile-Specific Logic:** Handles the nuances of mobile browser restrictions, providing a seamless "one-tap" experience.
-* **Lightweight & Performance-First:** Written in clean jQuery/JavaScript with minimal overhead, compatible with the **Code Snippets** plugin or `functions.php`.
+* **Selective Observation:** It doesn't track every DOM change. It specifically looks for `addedNodes` to detect the exact moment the Elementor Lightbox is rendered.
+* **Low Overhead:** The filter for `.elementor-lightbox` is lightning-fast, ensuring zero impact on the main thread or scroll performance.
+* **The Result:** A seamless "one-tap" video experience on both Desktop and Mobile, without the bloat of heavy event listeners or constant polling.
 
-**Category:** UX / Frontend Performance / Elementor Optimization
+**Ideal for:** High-traffic WooCommerce stores and complex Multisite networks where UX and Speed must coexist.
